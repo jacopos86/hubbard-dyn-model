@@ -1,0 +1,22 @@
+# td calculation
+
+run = td
+calc = Hartree-Fock
+outdir = ./TDHF0/
+
+# system parameters
+
+t = 1.0
+U = 0.0
+dvext = expr | exp(-(x-7.)**2)*sin(x) | 1+exp(-(x-7.)**2)*cos(x)
+
+# calculation parameters
+
+beta = 0.07
+tol = 1.e-7
+maxstep = 500
+
+# td evolution
+
+T = 100.0
+dt = 0.01

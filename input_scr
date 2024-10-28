@@ -1,0 +1,45 @@
+# td calculation
+
+outdir = ./TDSIM/
+calc = Hubbard
+
+# system parameters
+
+t = 1.0
+U = 0.0
+
+# calculation parameters
+
+beta = 0.07
+tol = 1.e-7
+maxstep = 500
+
+# td evolution
+
+T = 100.0
+dt = 0.01
+
+#
+# potential model
+# vext(i,t) = v(i) + C * exp(-(t-t0)^2/2/tau^2) * sin(a(i)*(t-t0)+phi(i))
+#
+
+# number of different parameters (C,t0,tau,v,a,phi)
+
+nC   = 10
+nt0  = 3
+t0i  = 10.0
+dt0  = 5.0
+ntau = 30
+tau0 = 0.1
+dtau = 0.2
+nv   = 40
+na   = 40
+a_in = 0.1
+a_fin = 20.0
+nphi = 2
+
+# external potential section
+
+vst  =  0.0  | 0.0
+vfin = -10.0 | 10.0

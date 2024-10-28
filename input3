@@ -1,0 +1,20 @@
+# xc kernel calculation
+
+run = chi
+
+# system parameters
+
+t = 0.5
+U = 0.5
+vext = 0.0 | -1.0 
+
+# calculation parameters
+
+beta = 0.07
+tol = 1.e-7
+maxstep = 500
+
+# td evolution
+
+T = 100.0
+dt = 0.01
